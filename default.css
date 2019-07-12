@@ -7,7 +7,6 @@ body {
     padding: 0px;
     font-family: 'Varela', sans-serif;
     font-size: 11pt;
-    font-weight: 300;
     color: #656565;
 }
 
@@ -249,6 +248,16 @@ ul.contact li a.icon-rss:before {
     padding-bottom: 1em;
 }
 
+@media (max-width: 500px) {
+    #header {
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
@@ -276,6 +285,8 @@ ul.contact li a.icon-rss:before {
 #menu ul {
     display: flex;
     flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu li {
@@ -378,18 +389,19 @@ ul.contact li a.icon-rss:before {
 #copyright {
     overflow: hidden;
     padding: 5em 0em;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /*border-top: 1px solid rgba(255, 255, 255, 0.08);*/
+    box-shadow: 0 0 6px -3px black;
 }
 
 #copyright p {
     text-align: center;
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
 
 #copyright a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /*********************************************************************************/
@@ -438,20 +450,20 @@ ul.contact li a.icon-rss:before {
 }
 
 
-#extra {
+.extra {
     overflow: hidden;
     padding: 5em 0em;
 }
 
-#extra .title {
+.extra .title {
     text-align: center;
 }
 
-#extra .button {
+.extra .button {
     margin-top: 5em;
 }
 
-#extra .fa {
+.extra .fa {
     display: block;
     margin-bottom: 0.5em;
     text-align: center;
